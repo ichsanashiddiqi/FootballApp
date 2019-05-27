@@ -43,12 +43,12 @@ public class FixturesActivity extends Fragment implements ListItemClickListener 
 
         Log.d(LOG_TAG, LOG_TAG + " ACTIVE");
 
-        RecyclerView list = view.findViewById(R.id.list_fixtures);
+        RecyclerView recyclerView = view.findViewById(R.id.list_fixtures);
 
         LinearLayoutManager layoutManager = new LinearLayoutManager(this.getActivity());
-        list.setLayoutManager(layoutManager);
-        list.setHasFixedSize(true);
-        list.setItemAnimator(new DefaultItemAnimator());
+        recyclerView.setLayoutManager(layoutManager);
+        recyclerView.setHasFixedSize(true);
+        recyclerView.setItemAnimator(new DefaultItemAnimator());
 
         ApiService apiService = ApiClient.getClient().create(ApiService.class);
 
@@ -57,7 +57,7 @@ public class FixturesActivity extends Fragment implements ListItemClickListener 
             @Override
             public void onResponse(@NonNull Call<Matches> call, @NonNull final Response<Matches> response) {
                 if (!response.isSuccessful()) {
-                    Log.e(LOG_TAG, "FAILED CONNECTION with code " + response.code() + ": " + response.errorBody());
+                    Log.e(LOG_TAG, "FAILED CONNECTION : " + response.errorBody());
                     return;
                 }
 
@@ -72,12 +72,12 @@ public class FixturesActivity extends Fragment implements ListItemClickListener 
                     Log.d(LOG_TAG, "matchList:" + matchList.size());
 
                     MatchesAdapter adapter = new MatchesAdapter(matchList, FixturesActivity.this);
-                    list.setAdapter(adapter);
+                    recyclerView.setAdapter(adapter);
 
-                    DividerItemDecoration divider = new DividerItemDecoration(list.getContext(), layoutManager.getOrientation());
-                    list.addItemDecoration(divider);
+                    DividerItemDecoration divider = new DividerItemDecoration(recyclerView.getContext(), layoutManager.getOrientation());
+                    recyclerView.addItemDecoration(divider);
                 } else {
-                    Log.w(LOG_TAG, "RESPONSE IS NULL!");
+                    Log.w(LOG_TAG, "RESPONSE null!");
                 }
             }
 

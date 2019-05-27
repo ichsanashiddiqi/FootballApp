@@ -45,7 +45,7 @@ public class MainActivity extends AppCompatActivity {
                         break;
                     case navFixtures:
                     default:
-                        Log.d(LOG_TAG, " Fixtures tab selected");
+                        Log.d(LOG_TAG, " Match tab selected");
                         toolbar.setTitle(R.string.navigation_fixtures);
                         fragment = new FixturesActivity();
                         loadFragment(fragment);

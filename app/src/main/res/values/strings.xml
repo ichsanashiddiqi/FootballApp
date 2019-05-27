@@ -2,8 +2,8 @@
     <string name="app_name">Footy Peeps</string>
 
     <!-- main tab names -->
-    <string name="navigation_competitions">Competitions</string>
-    <string name="navigation_fixtures">Today\'s Fixtures</string>
+    <string name="navigation_competitions">Daftar Kompetisi</string>
+    <string name="navigation_fixtures">Pertandingan Hari ini</string>
 
     <!-- for matches -->
     <string name="hint_match_status">FINISHED</string>

@@ -70,8 +70,8 @@ public class MatchesAdapter extends RecyclerView.Adapter<MatchesAdapter.Fixtures
 //            textMatchDay = view.findViewById(R.id.text_match_day);
             textHomeTeam = view.findViewById(R.id.text_home_team);
             textAwayTeam = view.findViewById(R.id.text_away_team);
-            textHomeWins = view.findViewById(R.id.text_home_wins);
-            textAwayWins = view.findViewById(R.id.text_away_wins);
+//            textHomeWins = view.findViewById(R.id.text_home_wins);
+//            textAwayWins = view.findViewById(R.id.text_away_wins);
 
             view.setTag(this);
             view.setOnClickListener(this);
