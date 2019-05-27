@@ -12,7 +12,7 @@
         android:orientation="vertical"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintGuide_begin="110dp"
+        app:layout_constraintGuide_begin="140dp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -33,30 +33,30 @@
     <TextView
         android:id="@+id/text_match_time"
         android:layout_width="0dp"
-        android:layout_height="wrap_content"
+        android:layout_height="81dp"
         android:text="@string/hint_match_time"
         android:textAppearance="@style/TextAppearance.AppCompat.Medium"
-        app:layout_constraintBottom_toTopOf="@+id/text_match_day"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="@+id/text_match_status"
         app:layout_constraintStart_toStartOf="@+id/text_match_status"
         app:layout_constraintTop_toBottomOf="@+id/text_match_status" />
 
-    <TextView
-        android:id="@+id/text_match_day"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="8dp"
-        android:text="@string/hint_match_day"
-        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="@+id/text_match_time"
-        app:layout_constraintStart_toStartOf="@+id/text_match_time"
-        app:layout_constraintTop_toBottomOf="@+id/text_match_time" />
+    <!--<TextView-->
+        <!--android:id="@+id/text_match_day"-->
+        <!--android:layout_width="0dp"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_marginBottom="8dp"-->
+        <!--android:text="@string/hint_match_day"-->
+        <!--android:textAppearance="@style/TextAppearance.AppCompat.Medium"-->
+        <!--app:layout_constraintBottom_toBottomOf="parent"-->
+        <!--app:layout_constraintEnd_toEndOf="@+id/text_match_time"-->
+        <!--app:layout_constraintStart_toStartOf="@+id/text_match_time"-->
+        <!--app:layout_constraintTop_toBottomOf="@+id/text_match_time" />-->
 
     <TextView
         android:id="@+id/text_home_team"
         android:layout_width="0dp"
-        android:layout_height="0dp"
+        android:layout_height="43dp"
         android:layout_marginStart="8dp"
         android:layout_marginBottom="8dp"
         android:text="@string/hint_home_team"
@@ -69,10 +69,9 @@
     <TextView
         android:id="@+id/text_away_team"
         android:layout_width="0dp"
-        android:layout_height="0dp"
+        android:layout_height="47dp"
         android:text="@string/hint_away_team"
         android:textAppearance="@style/TextAppearance.AppCompat.Large"
-        app:layout_constraintBottom_toBottomOf="@+id/text_match_day"
         app:layout_constraintEnd_toEndOf="@+id/text_home_team"
         app:layout_constraintStart_toStartOf="@+id/text_home_team"
         app:layout_constraintTop_toBottomOf="@id/text_home_team" />
@@ -84,7 +83,7 @@
         android:orientation="vertical"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintGuide_end="50dp"
+        app:layout_constraintGuide_percent="0.8807786"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 

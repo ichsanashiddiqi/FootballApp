@@ -67,7 +67,7 @@ public class MatchesAdapter extends RecyclerView.Adapter<MatchesAdapter.Fixtures
 
             textMatchStatus = view.findViewById(R.id.text_match_status);
             textMatchTime = view.findViewById(R.id.text_match_time);
-            textMatchDay = view.findViewById(R.id.text_match_day);
+//            textMatchDay = view.findViewById(R.id.text_match_day);
             textHomeTeam = view.findViewById(R.id.text_home_team);
             textAwayTeam = view.findViewById(R.id.text_away_team);
             textHomeWins = view.findViewById(R.id.text_home_wins);
@@ -79,7 +79,7 @@ public class MatchesAdapter extends RecyclerView.Adapter<MatchesAdapter.Fixtures
 
         void bind(int i) {
             String matchStatus = list.get(i).getMatchStatus();
-            String matchTime = list.get(i).getMatchDate().substring(11, 16);
+            String matchTime = list.get(i).getMatchDate();
             String matchHomeTeam = list.get(i).getMatchHomeTeam().getHomeTeamName();
             String matchAwayTeam = list.get(i).getMatchAwayTeam().getAwayTeamName();
 

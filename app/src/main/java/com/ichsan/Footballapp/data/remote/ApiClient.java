@@ -29,7 +29,7 @@ public class ApiClient {
                     .build();
 
             Gson gson = new GsonBuilder()
-                    .setDateFormat("yyyy-MM-dd'T'HH:mm:ssZ")
+                    .setDateFormat("yyyy-MM-dd'T'HH:mm")
                     .serializeNulls()
                     .setLenient()
                     .create();
