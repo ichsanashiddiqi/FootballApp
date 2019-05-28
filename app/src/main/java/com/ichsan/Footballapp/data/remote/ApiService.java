@@ -11,12 +11,17 @@ import retrofit2.Call;
 import retrofit2.http.GET;
 import retrofit2.http.Headers;
 import retrofit2.http.Path;
+import retrofit2.http.Query;
 
 public interface ApiService {
 
     @Headers(Config.BASE_KEY)
     @GET("/v2/competitions")
     Call<Competitions> getCompetitions();
+
+//    @Headers(Config.BASE_KEY)
+//    @GET("/v2/competitions/{id}")
+//    Call<Competitions> getCompetitions(@Query("q") String q);
 
     @Headers(Config.BASE_KEY)
     @GET("/v2/matches")
