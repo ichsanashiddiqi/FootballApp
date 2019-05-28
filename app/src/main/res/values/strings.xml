@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">Footy Peeps</string>
+    <string name="app_name">Football Schedule</string>
 
     <!-- main tab names -->
     <string name="navigation_competitions">Daftar Kompetisi</string>
