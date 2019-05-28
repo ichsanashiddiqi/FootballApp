@@ -130,5 +130,7 @@ public class MatchesAdapter extends RecyclerView.Adapter<MatchesAdapter.Fixtures
 
             listener.onListItemClick(position, id, name);
         }
+
+
     }
 }

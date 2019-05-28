@@ -60,13 +60,15 @@
 
     <TextView
         android:id="@+id/text_home_team"
-        android:layout_width="0dp"
-        android:layout_height="43dp"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
         android:layout_marginStart="1dp"
         android:layout_marginBottom="1dp"
+        android:layout_marginLeft="100dp"
         android:text="@string/hint_home_team"
-        android:paddingLeft="@dimen/activity_horizontal_margin"
-        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+        android:paddingStart="@dimen/activity_horizontal_margin"
+        android:paddingRight="20dp"
+        android:textAppearance="@style/TextAppearance.AppCompat.Small"
         card_view:layout_constraintBottom_toTopOf="@+id/text_away_team"
         card_view:layout_constraintStart_toStartOf="@+id/guideline_status"
         card_view:layout_constraintTop_toTopOf="@+id/text_match_status" />
@@ -75,24 +77,25 @@
         android:id="@+id/text_away_team"
         android:layout_width="0dp"
         android:layout_height="47dp"
+        android:layout_marginBottom="1dp"
         android:text="@string/hint_away_team"
-        android:paddingLeft="@dimen/activity_horizontal_margin"
-        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+        android:paddingStart="@dimen/activity_horizontal_margin"
+        android:textAppearance="@style/TextAppearance.AppCompat.Small"
         card_view:layout_constraintEnd_toEndOf="@+id/text_home_team"
         card_view:layout_constraintStart_toStartOf="@+id/text_home_team"
         card_view:layout_constraintTop_toBottomOf="@id/text_home_team" />
 
-    <!--<android.support.constraint.Guideline-->
-        <!--android:id="@+id/guideline_scores"-->
-        <!--android:layout_width="wrap_content"-->
-        <!--android:layout_height="wrap_content"-->
-        <!--android:orientation="vertical"-->
-        <!--card_view:layout_constraintBottom_toBottomOf="parent"-->
-        <!--card_view:layout_constraintEnd_toEndOf="parent"-->
-        <!--card_view:layout_constraintGuide_percent="0.8807786"-->
-        <!--card_view:layout_constraintStart_toStartOf="parent"-->
-        <!--card_view:layout_constraintTop_toTopOf="parent" />-->
-        <!---->
+    <android.support.constraint.Guideline
+        android:id="@+id/guideline_scores"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        card_view:layout_constraintBottom_toBottomOf="parent"
+        card_view:layout_constraintEnd_toEndOf="parent"
+        card_view:layout_constraintGuide_percent="0.8807786"
+        card_view:layout_constraintStart_toStartOf="parent"
+        card_view:layout_constraintTop_toTopOf="parent" />
+
 
     </android.support.constraint.ConstraintLayout>
 
